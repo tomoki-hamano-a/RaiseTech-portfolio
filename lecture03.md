@@ -1,12 +1,12 @@
 # 第３回課題
 - APサーバ名・バージョン:puma　・ver7.0.4
 - APサーバーを終了させた場合、引き続きアクセスできるか:できない
-- ![AP sever not running](/image/AP%20server%20not%20running.png)
+- ![APサーバー終了後アクセス](image03/APsever-not-running.png)
 - APサーバーを起動させた場合
-- ![AP sever running](/image/AP%20server%20running.png)
+- ![APサーバ起動時](image03/APserver-running.png)
 - DBサーバー名・バージョン:mysql　・ver8.0.34
 - DBサーバーを終了させた場合、引き続きアクセスできるか:できない
-- ![DB server not running](/image/DB%20server%20not%20running.png)
+- ![DBサーバー終了後アクセス](image03/DBserver-not-running.png)
 - Railsの構成管理ツールの名前:bundler
 
 ## レポート
