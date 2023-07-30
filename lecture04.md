@@ -1,5 +1,5 @@
 # 第４回課題
-- VPE作成
+- VPC作成
 - ![VPC作成](lecture.04/lecture04-VPC.png)
 
 - EC2作成
