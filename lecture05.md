@@ -3,7 +3,7 @@
 ![nginx+unicornでブラウザプレビュー](lecture.05/Nginx+unicorn.png)
 
 - ALB追加
-![ALB追加]((lecture.05/lecture05-ALB.png)
+![ALB追加](lecture.05/lecture05-ALB.png)
 ![ALB追加2](lecture.05/lecture05-ALB-status.png)
 
 - S3追加
