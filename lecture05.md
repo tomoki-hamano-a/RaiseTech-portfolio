@@ -14,7 +14,7 @@
 ![EC2→S3アクセスしてオブジェクト確認](lecture.05/EC2→S3.png)
 
 - ALB+S3追加後ブラウザプレビュー
-![ALB+S3追加後ブラウザプレビュー](lecture.05/スクリーンショット 2023-09-13 185239.png)
+![ALB+S3追加後ブラウザプレビュー](lecture.05/ALB+S3.png)
 
 - 構成図
 ![構成図](lecture.05/lecture05.png)
