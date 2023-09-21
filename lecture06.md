@@ -6,7 +6,7 @@
 - 内容２ eventSource : monitoring.amazonaws.com
 - 内容３ awsRegion : ap-northeast-1
 
-### CloudWatcアラーム
+### Cloudwatchアラーム
 - Unhealthyアラーﾑ（Raislアプリケーション使用不可状態）
 ![Unhealthyアラーム](lecture.06/cloudwatch-unhealthy.png)
 ![Unhealthyアラームメール](lecture.06/unhealthy-mail.png)
@@ -15,7 +15,7 @@
 ![healthyメール](lecture.06/healthy-mail.png)
 
 #### AWS利用料見積
-![AWS利用料見積はこちら](https://calculator.aws/#/estimate?id=7f4811fe40f39904d7940300047a77ba6050f4b6)
+![AWS利用料見積はこちら]<https://calculator.aws/#/estimate?id=7f4811fe40f39904d7940300047a77ba6050f4b6>
 
 ##### AWS８月度利用料
 ![AWS８月度利用料](lecture.06/billing-August.png)
