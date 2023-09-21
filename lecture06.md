@@ -15,7 +15,7 @@
 ![healthyメール](lecture.06/healthy-mail.png)
 
 #### AWS利用料見積
-- [AWS利用料見積はこちら]<https://calculator.aws/#/estimate?id=7f4811fe40f39904d7940300047a77ba6050f4b6>
+- [AWS利用料見積はこちら](https://calculator.aws/#/estimate?id=7f4811fe40f39904d7940300047a77ba6050f4b6)
 
 ##### AWS８月度利用料
 ![AWS８月度利用料](lecture.06/billing-August.png)
