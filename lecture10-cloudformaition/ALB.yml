@@ -1,0 +1,80 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Description: ALB-template
+
+Resources:
+#----------------------------------------------------------
+# ALB
+#----------------------------------------------------------
+ ALB:
+   Type: AWS::ElasticLoadBalancingV2::LoadBalancer
+   Properties: 
+     IpAddressType: ipv4
+     Name: lecture10-ALB
+     Scheme: internet-facing
+     SecurityGroups: 
+       - !Ref ALBsg
+     SubnetMappings: 
+        - SubnetId: !ImportValue PublicSubnet1
+        - SubnetId: !ImportValue PublicSubnet2
+     Type: application
+     Tags: 
+       - Key: Name
+         Value: lecutre10-ALB
+#----------------------------------------------------------
+# ALB Security-Group
+#----------------------------------------------------------  
+ ALBsg:
+   Type: AWS::EC2::SecurityGroup
+   Properties: 
+     GroupDescription: lecture10-ALBsg
+     VpcId: !ImportValue VPC
+     SecurityGroupIngress: 
+       - IpProtocol: tcp
+         FromPort: 80
+         ToPort: 80
+         CidrIp: 0.0.0.0/0
+         Description: HTTP From AnyWhere         
+     Tags: 
+       - Key: Name
+         Value: lecture10-ALBsg
+#----------------------------------------------------------
+# ALB Target-Group
+#----------------------------------------------------------  
+ ALBtg:
+   Type: AWS::ElasticLoadBalancingV2::TargetGroup
+   Properties: 
+     HealthCheckIntervalSeconds: 30
+     HealthCheckEnabled: true
+     HealthCheckPath: /
+     HealthCheckPort: traffic-port
+     HealthCheckProtocol: HTTP
+     HealthCheckTimeoutSeconds: 5
+     HealthyThresholdCount: 5
+     IpAddressType: ipv4
+     Port: 80
+     Protocol: HTTP
+     ProtocolVersion: HTTP1
+     TargetType: instance
+     Targets: 
+         - Id: !ImportValue EC2
+           Port: 80
+     UnhealthyThresholdCount: 2
+     VpcId: !ImportValue VPC
+     Matcher: 
+        HttpCode: 200
+     Tags: 
+       - Key: Name
+         Value: lecture10-ALB-tg    
+#----------------------------------------------------------
+# HTTP Lintener
+#----------------------------------------------------------  
+ HTTPLintener:
+   Type: AWS::ElasticLoadBalancingV2::Listener
+   Properties:
+     DefaultActions: 
+       - Type: forward
+         TargetGroupArn: !Ref ALBtg
+     LoadBalancerArn: !Ref ALB
+     Port: 80
+     Protocol: HTTP
