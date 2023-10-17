@@ -384,4 +384,3 @@ Resources:
      VpcEndpointType: Gateway
      VpcId: !ImportValue VPC
 ```
-![S3](lecture.10/lecture10-S3.png)
