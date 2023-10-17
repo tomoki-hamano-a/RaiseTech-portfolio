@@ -5,7 +5,7 @@
 ![第５回課題構成図](lecture.05/lecture05.png)
 
 ### 各テンプレート+リソース写真
-- VPC･InternetGateWay･Subnets･Routtable
+- VPC･InternetGateWay･Subnets･Routetable
 ```
 AWSTemplateFormatVersion: 2010-09-09
 
