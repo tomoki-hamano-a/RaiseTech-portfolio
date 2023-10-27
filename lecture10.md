@@ -1,6 +1,6 @@
 # 第10回課題
 
-## 課題内容:構成図参考にしてCloudFormationを利用して環境をコード化
+## 課題内容:構成図を参考にしてCloudFormationを利用して環境をコード化
 - 今回は第５回課題で作成した構成図を使用
 ![第５回課題構成図](lecture.05/lecture05.png)
 
@@ -198,7 +198,7 @@ Resources:
        - IpProtocol: tcp
          FromPort: 22
          ToPort: 22
-         CidrIp: 192.168.0.0/16
+         CidrIp: 153.125.105.0/24
          Description: SSH From AnyWhere
      Tags: 
        - Key: Name
