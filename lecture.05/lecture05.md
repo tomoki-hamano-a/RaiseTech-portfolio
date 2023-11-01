@@ -1,23 +1,23 @@
 # 第５回課題報告書
 - nginx+unicornでブラウザプレビュー
-![nginx+unicornでブラウザプレビュー](lecture.05/Nginx+unicorn.png)
+![nginx+unicornでブラウザプレビュー](lecture.05/image file/Nginx+unicorn.png)
 
 - ALB追加
-![ALB追加](lecture.05/lecture05-ALB.png)
-![ALB追加2](lecture.05/lecture05-ALB-status.png)
+![ALB追加](lecture.05/image file/lecture05-ALB.png)
+![ALB追加2](lecture.05/image file/lecture05-ALB-status.png)
 
 - S3追加
-![S3バケット](lecture.05/lecture05-s3a-backet-list.png)
-![S3バケットオブジェクト](lecture.05/lecture05-s3a-backet-object.png)
+![S3バケット](lecture.05/image file/lecture05-s3a-backet-list.png)
+![S3バケットオブジェクト](lecture.05/image file/lecture05-s3a-backet-object.png)
 
 - EC2→S3アクセスしてオブジェクト確認
-![EC2→S3アクセスしてオブジェクト確認](lecture.05/EC2→S3.png)
+![EC2→S3アクセスしてオブジェクト確認](lecture.05/image file/EC2→S3.png)
 
 - ALB+S3追加後ブラウザプレビュー
-![ALB+S3追加後ブラウザプレビュー](lecture.05/ALB+S3.png)
+![ALB+S3追加後ブラウザプレビュー](lecture.05/image file/ALB+S3.png)
 
 - 構成図
-![構成図](lecture.05/lecture05.png)
+![構成図](lecture.05/image file/lecture05.png)
 
 
 ## 感想
