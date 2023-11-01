@@ -2,7 +2,7 @@
 
 ## 課題内容:CloudFormationを利用して、現在までに作った環境をコード化しよう。
 - 今回は第５回課題で作成した構成図を使用
-![第５回課題構成図](lecture.05/image file/lecture05.png)
+![第５回課題構成図](lecture.05/image/lecture05.png)
 
 ### 各テンプレート+リソース写真
 - VPC･InternetGateWay･Subnets･Routetable
@@ -147,8 +147,8 @@ Resources:
      RouteTableId: !Ref PrivateRouteTable2
      SubnetId: !Ref PrivateSubnet2
 ```
-![lecture10-VPC(1)](lecture.10/image file/lecture10-VPC(1).png)
-![lecture10-VPC(2)](lecture.10/image file/lecture10-VPC(2).png)
+![lecture10-VPC(1)](./image/lecture10-VPC(1).png)
+![lecture10-VPC(2)](./image/lecture10-VPC(2).png)
 
 - EC2
 ```
@@ -204,7 +204,7 @@ Resources:
        - Key: Name
          Value: lecture10-EC2sg
 ```
-![EC2](lecture.10/image file/lecture10-EC2.png)
+![EC2](./image/lecture10-EC2.png)
 
 - RDS
 ```
@@ -265,7 +265,7 @@ Resources:
        - !ImportValue PrivateSubnet1
        - !ImportValue PrivateSubnet2
 ```
-![RDS](lecture.10/image file/lecture10-RDS.png)
+![RDS](./image/lecture10-RDS.png)
 
 - ALB
 ```
@@ -350,7 +350,7 @@ Resources:
      Port: 80
      Protocol: HTTP
 ```
-![ALB](lecture.10/image file/lecture10-ALB.png)
+![ALB](./image/lecture10-ALB.png)
 
 - S3･VPCEndpoint
 ```
@@ -384,4 +384,4 @@ Resources:
      VpcEndpointType: Gateway
      VpcId: !ImportValue VPC
 ```
-![S3](lecture.10/image file/lecture10-S3.png)
+![S3](./image/lecture10-S3.png)

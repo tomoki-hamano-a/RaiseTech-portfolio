@@ -74,4 +74,4 @@ end
 $ rake spec
 ```
 - Nginxが入っており80番ポートがListen状態である事、curlの結果200でOKが返ってきている事、0 failuresになっている事を確認。
-![ServerSpec test complete](lecture.11/image file/ServerSpec-test.png)
+![ServerSpec test complete](./image/ServerSpec-test.png)
