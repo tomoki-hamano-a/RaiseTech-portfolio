@@ -1,9 +1,9 @@
 # 第３回課題
 - APサーバ名・バージョン:puma　・ver7.0.4
 - APサーバーを終了させた場合、引き続きアクセスできるか:できない
-- ![APサーバー終了後アクセス](lecture.03/image file/APsever-not-running.png)
+- ![APサーバー終了後アクセス](lecture.03/image file/APserver-running.png)
 - APサーバーを起動させた場合
-- ![APサーバ起動時](lecture.03/image file/APserver-running.png)
+- ![APサーバ起動時](lecture.03/image file/APsever-not-running.png)
 - DBサーバー名・バージョン:mysql　・ver8.0.34
 - DBサーバーを終了させた場合、引き続きアクセスできるか:できない
 - ![DBサーバー終了後アクセス](lecture.03/image file/DBserver-not-running.png)
