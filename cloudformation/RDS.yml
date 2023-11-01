@@ -9,7 +9,7 @@ Resources:
  RDS:
    Type: AWS::RDS::DBInstance
    Properties:
-     AvailabilityZone: ap-northeast-1a
+    #  AvailabilityZone: ap-northeast-1a
      DBInstanceIdentifier: lecture10-database
      DBSubnetGroupName: !Ref RDSSubnetGroup
      DBInstanceClass: db.t3.micro
