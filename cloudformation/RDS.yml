@@ -7,12 +7,12 @@ Parameters:
 # RDS User Password
 # ----------------------
  RDSUserPassword:
-    NoEcho: true  
-    Description: rds master user password
-    Type: String
-    MinLength: 8
-    MaxLength: 128
-    AllowedPattern: "[a-zA-Z0-9]*"
+   Type: String
+   Description: rds master user password
+   NoEcho: true
+   MinLength: 8
+   MaxLength: 128
+   AllowedPattern: "[a-zA-Z0-9]*"
 
 Resources:
 #----------------------------------------------------------
@@ -21,7 +21,10 @@ Resources:
  RDS:
    Type: AWS::RDS::DBInstance
    Properties:
-    #  AvailabilityZone: ap-northeast-1a
+     AvailabilityZone:
+       Fn::Select:
+       - 0
+       - Fn::GetAZs: ""
      DBInstanceIdentifier: lecture10-database
      DBSubnetGroupName: !Ref RDSSubnetGroup
      DBInstanceClass: db.t3.micro

@@ -18,7 +18,10 @@ Resources:
    Properties:
      ImageId: ami-07d6bd9a28134d3b3
      InstanceType: t2.micro
-    #  AvailabilityZone: ap-northeast-1a
+     AvailabilityZone:
+       Fn::Select:
+       - 0
+       - Fn::GetAZs: ""
      SubnetId: !ImportValue PublicSubnet1
      KeyName: !Ref KeyPair
      SecurityGroupIds:
