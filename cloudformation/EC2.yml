@@ -1,0 +1,64 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Description: ec2-template
+
+Resources:
+#----------------------------------------------------------
+# EC2 keypair
+#----------------------------------------------------------            
+ KeyPair:
+   Type: AWS::EC2::KeyPair
+   Properties:
+     KeyName: lecture10-KeyPair
+#----------------------------------------------------------
+# EC2
+#---------------------------------------------------------- 
+ EC2:
+   Type: AWS::EC2::Instance
+   Properties:
+     ImageId: ami-07d6bd9a28134d3b3
+     InstanceType: t2.micro
+     AvailabilityZone: ap-northeast-1a
+     SubnetId: !ImportValue PublicSubnet1
+     KeyName: !Ref KeyPair
+     SecurityGroupIds:
+       - !Ref EC2sg
+     Tags:
+       - Key: Name
+         Value: lecture10-EC2
+#----------------------------------------------------------
+# EC2 Security-Group
+#----------------------------------------------------------  
+ EC2sg:
+   Type: AWS::EC2::SecurityGroup
+   Properties: 
+     GroupDescription: lecture10-EC2sg
+     VpcId: !ImportValue VPC
+     SecurityGroupIngress: 
+       - IpProtocol: tcp
+         FromPort: 80
+         ToPort: 80
+         CidrIp: 0.0.0.0/0
+         Description: HTTP From AnyWhere         
+      
+       - IpProtocol: tcp
+         FromPort: 22
+         ToPort: 22
+         CidrIp: 153.125.105.0/24
+         Description: SSH Connect CIDER
+     Tags: 
+       - Key: Name
+         Value: lecture10-EC2sg
+#----------------------------------------------------------
+# Outputs
+#----------------------------------------------------------
+Outputs:
+ EC2:
+   Value: !Ref EC2
+   Export:
+     Name: EC2   
+  
+ EC2sg:
+   Value: !Ref EC2sg
+   Export: 
+     Name: EC2sg
