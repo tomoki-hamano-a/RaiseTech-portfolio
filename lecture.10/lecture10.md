@@ -2,7 +2,7 @@
 
 ## 課題内容:CloudFormationを利用して、現在までに作った環境をコード化しよう。
 - 今回は第５回課題で作成した構成図を使用
-![第５回課題構成図](./image/Diagram.png)
+![第５回課題構成図](../lecture.05/image/lecture05.png)
 
 ### 各テンプレート+リソース写真
 - VPC･InternetGateWay･Subnets･Routetable
