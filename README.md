@@ -1,2 +1,0 @@
-# RaiseTech-portfolio
-RaiseTechポートフォリオ
