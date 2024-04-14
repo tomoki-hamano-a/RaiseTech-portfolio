@@ -1,4 +1,6 @@
 # 第４回課題
+
+## 課題内容:VPCを作成してEC2とRDSを構築しよう
 - VPC作成
 ![VPC作成](./image/lecture04-VPC.png)
 
