@@ -12,11 +12,11 @@
 
 - [lecture.06](https://github.com/tomoki-hamano-a/RaiseTech-portfolio/tree/main/lecture.06)　第6回課題内容:AWS利用見積を作成、CloudTrailでイベント設定、Cloudwatchでアラームを設定してテストをしよう
 
-- lecture.07　第7回課題内容:
+- lecture.07　第7回課題内容:システムにおけるセキュリティ講座<br>課題の提出無し
 
-- lecture.08　第8回課題内容:
+- lecture.08　第8回課題内容:第5回課題のデモンストレーション<br>課題の提出無し
 
-- lecture.09　第9回課題内容:
+- lecture.09　第9回課題内容:第5回課題のデモンストレーション続き<br>課題の提出無し
 
 - [lecture.10](https://github.com/tomoki-hamano-a/RaiseTech-portfolio/tree/main/lecture.10)　第10回課題内容::CloudFormationを利用して、現在までに作った環境をコード化しよう
 
