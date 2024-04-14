@@ -10,7 +10,7 @@
 
 - [lecture.05](https://github.com/tomoki-hamano-a/RaiseTech-portfolio/tree/main/lecture.05)　第5回課題内容:EC2にRailsアプリケーションをデプロイして構成図を作成しよう
 
-- [lecture.06](https://github.com/tomoki-hamano-a/RaiseTech-portfolio/tree/main/lecture.06)　第6回課題内容:CloudTrailでイベント設定、Cloudwatchでアラームを設定してテスト、利用見積を作成してみよう
+- [lecture.06](https://github.com/tomoki-hamano-a/RaiseTech-portfolio/tree/main/lecture.06)　第6回課題内容:AWS利用見積を作成、CloudTrailでイベント設定、Cloudwatchでアラームを設定してテストをしよう
 
 - lecture.07　第7回課題内容:
 
